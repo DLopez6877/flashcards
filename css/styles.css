@@ -1,0 +1,18 @@
+.flashcard {
+  float: left;
+  width: 28%;
+  margin: 10px 2.666666667%;
+  height: 300px;
+}
+
+.initially-hidden {
+  display: none;
+}
+
+.flashcard h3 {
+  margin: 50% 0;
+}
+
+.flashcard p {
+  margin: 40% 0;
+}
