@@ -1,18 +1,65 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.flashcard h3 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .flashcard {
   float: left;
   width: 28%;
   margin: 10px 2.666666667%;
   height: 300px;
-}
-
-.initially-hidden {
-  display: none;
-}
-
-.flashcard h3 {
-  margin: 50% 0;
+  display: table;
+  table-layout: fixed;
 }
 
 .flashcard p {
-  margin: 40% 0;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.flashcard .initially-hidden {
+  display: none;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.header-row {
+  border-bottom: 5px solid black;
+  margin-bottom: 70px;
+}
+
+h1 {
+   font-size: 100px;
+}
+
+@media screen and (max-width: 1250px) {
+  .flashcard {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .flashcard {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .header-row {
+    margin-bottom: 35px;
+  }
 }

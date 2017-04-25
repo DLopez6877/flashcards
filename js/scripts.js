@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
   $(".flashcard").click(function() {
-    $(this).children().toggle();
+    $(this).children().toggleClass('initially-hidden');
+    $(this).children().toggleClass('table-cell');
   });
 
 });
